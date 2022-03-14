@@ -13,7 +13,7 @@
 <form action="" method="get">
 <div>
 <label for="user-id">User-id</label>
-    <input type="text" name="user-id" id="user-id" required></input>
+    <input type="text" name="user-id" id="user-id" pattern=".{5,12}" required title="5 to 12 characters"></input>
     </div>
     <div>
 <label for="password">Password</label>
@@ -50,7 +50,7 @@
         </div>
         <div>
             <label for="Language">Language</label>
-                    <input type="checkbox" name="language" id="language" required>English</input> <input type="checkbox" name="language" id="language" required>non-English</input>
+                    <input type="radio" name="language" id="language" required>English</input> <input type="radio" name="language" id="language" required>non-English</input>
         </div>
         <div>
             <label for="About" >About</label>
